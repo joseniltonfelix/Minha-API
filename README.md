@@ -35,6 +35,7 @@ A API possui as seguintes funcionalidades:
     "email": "string"
   }
 
+
 ## Fazer login:
 
 - **URL**: '/login'
@@ -42,11 +43,25 @@ A API possui as seguintes funcionalidades:
 - **Descrição**: Autentique-se na plataforma para acessar funcionalidades restritas.
 - **Resposta**: Devolve um JSON contendo o comprovante de login.
 
-- ## Fazer uma compra:
+
+## Fazer uma compra:
 
 - **URL**: '/compras'
 - **Método**: `POST`
 - **Descrição**: Faça compras de ingressos para o evento.
+- **Resposta**: Retorna um JSON contendo os dados da compra.
+
+
+## Listar uma compra:
+
+- **URL**: '/compras'
+- **Método**: `POST`
+- **Descrição**: Ver a lista de compras.
 - **Resposta**: Retorna um JSON contendo a lista de compras.
 
-- 
+Cancelar uma compra:
+
+- **URL**: '/compras/:id'
+- **Método**: `DELETE`
+- **Descrição**: Deletar uma compra.
+
